@@ -36,7 +36,7 @@ The command for creating QR code is
     
 # Usefull documentations
 
-       https://wiki.archlinux.org/title/Google_Authenticator
-       https://github.com/google/google-authenticator-libpam
+    https://wiki.archlinux.org/title/Google_Authenticator
+    https://github.com/google/google-authenticator-libpam
         
         
