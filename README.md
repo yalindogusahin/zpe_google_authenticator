@@ -3,9 +3,30 @@
 
 # Configuring the PAM file on Nodegrid
 
-    Warning: If you do all configuration via SSH do not close the session before you tested that everything is working,
+**Warning**
+
+<table>
+  <thead>
+    <tr>
+      <td align="left">
+        :information_source: Warning
+      </td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <ul>
+          <li>If you do all configuration via SSH do not close the session before you tested that everything is working,
     else you may lock yourself out. Furthermore consider generating the key file before editing (and therefore applying)
-    the PAM configuration.
+    the PAM configuration.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+    
 
 First we need to login as root to the device. For that open console session and type
 
