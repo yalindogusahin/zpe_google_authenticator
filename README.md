@@ -32,3 +32,11 @@ If the admin account doesn't have .ssh folder under /home/admin we need to creat
 The command for creating QR code is
 
     google-authenticator -t -Q ANSI -s /home/${USER}/.ssh/.google_authenticator
+    
+    
+# Usefull documentations
+
+       https://wiki.archlinux.org/title/Google_Authenticator
+       https://github.com/google/google-authenticator-libpam
+        
+        
