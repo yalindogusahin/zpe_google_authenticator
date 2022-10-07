@@ -41,6 +41,7 @@ We need to activate ChallengeResponseAuthentication in sshd_config file located 
     vi /etc/ssh/sshd_config
 
     ChallengeResponseAuthentication yes
+    KbdInteractiveAuthentication yes
 
 For creating 2FA QR code we need to switch the account that we want to add 2FA. In this case I want to add for admin account.
 
