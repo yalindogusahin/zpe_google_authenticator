@@ -3,8 +3,6 @@
 
 # Configuring the PAM file on Nodegrid
 
-**Warning**
-
 <table>
   <thead>
     <tr>
