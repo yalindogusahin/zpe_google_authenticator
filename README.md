@@ -3,6 +3,8 @@
 
 # Configuring the PAM file on Nodegrid
 
+    Warning: If you do all configuration via SSH do not close the session before you tested that everything is working, else you may lock yourself out. Furthermore consider generating the key file before editing (and therefore applying) the PAM configuration.
+
 First we need to login as root to the device. For that open console session and type
 
     shell sudo su -
