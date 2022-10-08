@@ -64,3 +64,6 @@ The command for creating QR code is
     https://github.com/google/google-authenticator-libpam
         
         
+ ![image](https://user-images.githubusercontent.com/103506681/194720918-770cd1f0-f0ef-42f3-8499-efb9cd313ee3.png)
+
+        
