@@ -22,6 +22,10 @@ We need to edit /etc/pam.d/sshd file for adding authentication method
     vi /etc/pam.d/sshd
 
     auth      required    pam_google_authenticator.so secret=/home/${USER}/.ssh/.google_authenticator nullok
+    
+> **Warning**
+
+> If you are using RADIUS you need to add this line to /etc/pam.d/s_local
 
 We need to activate ChallengeResponseAuthentication in sshd_config file located in /etc/ssh
 
@@ -43,6 +47,9 @@ If the admin account doesn't have .ssh folder under /home/admin we need to creat
 The command for creating QR code is
 
     google-authenticator -t -Q ANSI -s /home/${USER}/.ssh/.google_authenticator
+    
+
+    
     
     
 # Usefull documentations
