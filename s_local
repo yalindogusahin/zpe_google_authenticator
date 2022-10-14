@@ -1,0 +1,10 @@
+#
+# The PAM configuration file for the 's_local' service
+#
+auth            requisite       pam_securetty.so
+auth            requisite       pam_unix.so use_first_pass
+auth      required    pam_google_authenticator.so secret=/home/${USER}/.ssh/.google_authenticator nullok
+account         optional        pam_aaa_flags.so Local
+account         required        pam_unix.so
+password        include         sys-passwd
+session         required        pam_unix.so
