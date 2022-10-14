@@ -26,6 +26,17 @@ We need to edit /etc/pam.d/sshd file for adding authentication method
 > **Warning**
 
 > If you are using RADIUS you need to add this line to /etc/pam.d/s_local
+        
+            #
+            # The PAM configuration file for the 's_local' service
+            #
+            auth            requisite       pam_securetty.so
+            auth            requisite       pam_unix.so use_first_pass
+            auth      required    pam_google_authenticator.so secret=/home/${USER}/.ssh/.google_authenticator nullok
+            account         optional        pam_aaa_flags.so Local
+            account         required        pam_unix.so
+            password        include         sys-passwd
+            session         required        pam_unix.so
 
 We need to activate ChallengeResponseAuthentication in sshd_config file located in /etc/ssh
 
